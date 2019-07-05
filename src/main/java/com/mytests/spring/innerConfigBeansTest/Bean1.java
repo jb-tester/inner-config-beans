@@ -13,10 +13,14 @@ import javax.annotation.Resource;
 public class Bean1 {
 
 
-   // @Resource(name = "component1")  // incorrect name!
+   //@Resource(name = "component1")  // incorrect name!
    @Resource(name = "mainConfig.Component1") // correct name!
-
     private MainConfig.Component1 component1;
+
+    //@Resource(name = "innerConfig")   // incorrect!
+    @Resource(name = "mainConfig.InnerConfig")     // correct!
+    private MainConfig.InnerConfig ic;
+
 
     public MainConfig.Component1 getComponent1() {
         return component1;

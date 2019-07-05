@@ -21,8 +21,13 @@ public class MainConfig {
         return new Bean1();
     }
 
+    @Configuration
+     static class InnerConfig{
+
+    }
+
     @Component
-    static class Component1{
+     static class Component1{
        @Value("c1")
        String id;
 
