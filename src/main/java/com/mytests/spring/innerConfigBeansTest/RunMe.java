@@ -12,6 +12,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class RunMe {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(MainConfig.class);
+        System.out.println("============ all beans: ==============================");
         for (String beanDefinitionName : ctx.getBeanDefinitionNames()) {
             System.out.println(beanDefinitionName);
         }
