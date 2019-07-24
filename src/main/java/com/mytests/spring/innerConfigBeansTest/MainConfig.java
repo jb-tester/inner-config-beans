@@ -22,12 +22,12 @@ public class MainConfig {
     }
 
     @Configuration
-     static class InnerConfig{
+    public static class InnerConfig {
 
     }
 
     @Component
-     static class Component1{
+    public class Component1 {
        @Value("c1")
        String id;
 

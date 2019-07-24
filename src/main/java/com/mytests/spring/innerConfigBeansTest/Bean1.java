@@ -1,7 +1,5 @@
 package com.mytests.spring.innerConfigBeansTest;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import javax.annotation.Resource;
 
 /**
@@ -14,7 +12,7 @@ public class Bean1 {
 
 
    //@Resource(name = "component1")  // incorrect name!
-   @Resource(name = "mainConfig.Component1") // correct name!
+   @Resource(name = "com.mytests.spring.innerConfigBeansTest.MainConfig$Component1") // correct name!
     private MainConfig.Component1 component1;
 
     //@Resource(name = "innerConfig")   // incorrect!

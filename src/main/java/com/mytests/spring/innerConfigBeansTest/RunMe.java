@@ -17,7 +17,8 @@ public class RunMe {
             System.out.println(beanDefinitionName);
         }
         System.out.println("==========================================");
-        System.out.println(ctx.getBean(Bean1.class).getComponent1().getId());
+        Bean1 bean1 = ctx.getBean(Bean1.class);
+        System.out.println(bean1.getComponent1().getId());
     }
 
 }
