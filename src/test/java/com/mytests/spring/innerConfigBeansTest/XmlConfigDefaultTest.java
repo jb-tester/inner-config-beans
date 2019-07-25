@@ -6,8 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import static org.junit.Assert.*;
+import org.springframework.test.context.support.GenericXmlContextLoader;
 
 /**
  * *******************************
@@ -16,9 +15,8 @@ import static org.junit.Assert.*;
  * *******************************
  */
 @RunWith(SpringRunner.class)
-@ContextConfiguration(locations = {"test-config1.xml","test-config2.xml"})
-//@ContextConfiguration(locations = "test-config*.xml")
-public class Bean1Test {
+@ContextConfiguration(loader = GenericXmlContextLoader.class)
+public class XmlConfigDefaultTest {
 
 
     @Autowired
