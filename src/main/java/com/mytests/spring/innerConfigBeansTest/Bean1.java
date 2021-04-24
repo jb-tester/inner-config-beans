@@ -11,8 +11,9 @@ import javax.annotation.Resource;
 public class Bean1 {
 
 
-   //  @Resource(name = "component1")  // incorrect name!
-   @Resource(name = "com.mytests.spring.innerConfigBeansTest.MainConfig$Component1") // correct name!
+    //@Resource(name = "component1")  // incorrect name used by IDEA
+    @Resource(name = "com.mytests.spring.innerConfigBeansTest.MainConfig$Component1")
+    // correct name, that is not recognized by IDEA
     private MainConfig.Component1 component1;
 
     //@Resource(name = "innerConfig")   // incorrect!

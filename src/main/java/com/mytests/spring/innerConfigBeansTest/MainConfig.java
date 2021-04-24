@@ -10,8 +10,6 @@ import org.springframework.stereotype.Component;
  * *******************************
  * Created by Irina.Petrovskaya on 7/4/2019.
  * Project: inner-config-beans
- *
- *    
  * *******************************
  */
 @Configuration
