@@ -1,3 +1,2 @@
-inner components referencing by resource name
-
+inner components referencing by resource name spring testing: xml configurations
 [Spring: components that are inner classes are referenced by incorrect bean name](https://youtrack.jetbrains.com/issue/IDEA-217674)
